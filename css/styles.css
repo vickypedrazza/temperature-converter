@@ -1,0 +1,119 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 1%, 84%);
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: "Kumbh Sans", sans-serif;
+        color: var(--very-dark-desaturated-blue);
+        font-weight: 700;
+        background-color: #4acdd9;
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff0000' fill-opacity='0.18'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+        
+    }
+
+h1{
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+}
+@media (min-width: 768px) {
+    h1{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+p{
+display: flex;
+justify-content: center;
+padding-bottom: 2px;
+}
+@media (min-width: 768px) {
+    p{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.form_input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background: var(--dark-gray);
+}
+
+.form_input:focus{
+    background: #ffffff;
+}
+
+
+.botones{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 10px;
+}
+@media (min-width: 480px) {
+    .botones{
+        width: auto;
+    }
+}
+.boton1{
+    display: block;
+    margin-right: 30px;
+    margin-left: 10px;
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem 1.7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #D6D5D5;
+    border: none;
+}
+.boton1:hover{
+    cursor: pointer;
+    background:linear-gradient(to bottom, #D6D5D5, #9d94c0
+    )
+}
+.boton2{
+    display: block;
+    margin-right: 5px;
+    margin-left: 110px;
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem 1.7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #D6D5D5;
+    border: none;
+}
+.boton2:hover{
+    cursor: pointer;
+    background:linear-gradient(to bottom, #D6D5D5, #b95a5a
+    )
+}
